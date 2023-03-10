@@ -1,0 +1,128 @@
+.wrapper {
+	min-height: 100vh;
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	background-color: #f5f5f5;
+}
+
+.container {
+	max-width: 28rem;
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	padding: 2rem;
+	gap: 32px;
+}
+
+.box {
+	max-width: 20rem;
+	width: 100%;
+	aspect-ratio: 1/1;
+
+	background-color: white;
+	border-radius: 6px;
+}
+
+.sliders {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	row-gap: 24px;
+}
+
+.input-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.label {
+	margin-bottom: 8px;
+}
+
+.code {
+	background-color: white;
+	border: 1px solid gray;
+	border-radius: 4px;
+	padding: 8px;
+	resize: none;
+	width: 100%;
+}
+
+input[type="range"] {
+	-webkit-appearance: none;
+	appearance: none;
+	background: transparent;
+	cursor: pointer;
+	width: 100%;
+}
+
+input[type="range"]:focus {
+	outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+	background-color: #e8e8e8;
+	border-radius: 0.5rem;
+	height: 0.5rem;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	margin-top: -4px;
+	background-color: #0062ff;
+	border-radius: 0.5rem;
+	height: 1rem;
+	width: 1rem;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+	outline: 3px solid #0062ff;
+	outline-offset: 0.125rem;
+}
+
+input[type="range"]::-moz-range-track {
+	background-color: #e8e8e8;
+	border-radius: 0.5rem;
+	height: 0.5rem;
+}
+
+input[type="range"]::-moz-range-thumb {
+	background-color: #0062ff;
+	border: none;
+	border-radius: 0.5rem;
+	height: 1rem;
+	width: 1rem;
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+	outline: 3px solid #0062ff;
+	outline-offset: 0.125rem;
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		justify-content: space-evenly;
+		flex-direction: row-reverse;
+		max-width: none;
+	}
+
+	.box {
+		max-width: 28rem;
+	}
+
+	.sliders {
+		max-width: 20rem;
+	}
+}

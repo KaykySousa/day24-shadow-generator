@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Day 24 - Shadow Generator</title>
+		<link rel="stylesheet" href="./styles/reset.css" />
+		<link rel="stylesheet" href="./styles/index.css" />
+		<script src="./script.js" defer></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="container">
+				<div class="box"></div>
+				<div class="sliders">
+					<div class="input-container">
+						<label class="label">Horizontal length</label>
+						<input
+							type="range"
+							min="-120"
+							max="120"
+							step="1"
+							value="8"
+							data-option="horizontal"
+							class="slider"
+						/>
+					</div>
+
+					<div class="input-container">
+						<label class="label">Vertical length</label>
+						<input
+							type="range"
+							min="-120"
+							max="120"
+							step="1"
+							value="8"
+							data-option="vertical"
+							class="slider"
+						/>
+					</div>
+
+					<div class="input-container">
+						<label class="label">Blur</label>
+						<input
+							type="range"
+							min="0"
+							max="100"
+							step="1"
+							value="20"
+							data-option="blur"
+							class="slider"
+						/>
+					</div>
+
+					<div class="input-container">
+						<label class="label">Spread</label>
+						<input
+							type="range"
+							min="0"
+							max="100"
+							step="1"
+							value="4"
+							data-option="spread"
+							class="slider"
+						/>
+					</div>
+
+					<div class="input-container">
+						<label class="label">Opacity</label>
+						<input
+							type="range"
+							data-option="opacity"
+							min="0"
+							max="255"
+							step="1"
+							value="50"
+							class="slider"
+						/>
+					</div>
+
+					<div class="input-container">
+						<label class="label">Shadow color</label>
+						<input
+							type="color"
+							data-option="shadowColor"
+							class="color-picker"
+						/>
+					</div>
+
+					<div class="input-container">
+						<label class="label">Box color</label>
+						<input
+							type="color"
+							data-option="boxColor"
+							value="#ffffff"
+							class="color-picker"
+						/>
+					</div>
+
+					<div class="input-container">
+						<label class="label">Inset</label>
+						<input
+							type="checkbox"
+							data-option="inset"
+							class="checkbox"
+						/>
+					</div>
+					<textarea readonly class="code"></textarea>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
